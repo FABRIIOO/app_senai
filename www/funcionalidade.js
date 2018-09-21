@@ -1379,7 +1379,7 @@ function pdfopen(){
             {
                 cordova.plugins.barcodeScanner.scan(
                     function (result) {                 	
-                      window.open('https://docs.google.com/viewer?url='+result.text,'_blank, location=yes');
+                      window.open(result.text,'_blank, location=yes');
                     }
                );
             }
